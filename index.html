@@ -3,31 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Google Interface</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://www.example.com/your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .top-bar {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .top-bar a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 580px;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 10px;
+            background: transparent;
+        }
+
+        .search-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-buttons button {
+            background-color: #f8f9fa;
+            border: 1px solid #dfe1e5;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-buttons button:hover {
+            border-color: #c6c6c6;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+            color: #70757a;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Webpage</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
-        <h2>Home</h2>`rt
-        <p>This is the home section of the webpage. Welcome!</p>
-    </section>
-    <section id="about">
-        <h2>About</h2>
-        <p>This section provides information about the webpage or the creator.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to contact us at example@example.com.</p>
-    </section>
+    <div class="top-bar">
+        <a href="https://mail.google.com" target="_blank">Gmail</a>
+        <a href="https://www.google.com/imghp" target="_blank">Images</a>
+        <a href="https://www.google.com/intl/en/about/products" target="_blank">Apps</a>
+    </div>
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search Google or type a URL">
+    </div>
+    <div class="search-buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
     <footer>
-        <p>&copy; 2024 My Simple Webpage</p>
+        <p>Google Mock Interface</p>
     </footer>
 </body>
 </html>
